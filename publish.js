@@ -1,5 +1,5 @@
 const amqplib = require('amqplib')
-const amqpUrl = process.env.AMQP_URL || 'amqps://localhost'
+const amqpUrl = process.env.AMQP_URL || 'amqp://localhost'
 
 async function do_publish() {
     const conn = await amqplib.connect(amqpUrl);
